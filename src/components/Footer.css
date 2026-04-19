@@ -29,7 +29,7 @@
 }
 
 /* ── Phones (≤ 430px) ── */
-@media (max-width: 440px) {
+@media (max-width: 430px) {
   .footer {
     padding: 16px 16px;
     font-size: 11px;
@@ -38,4 +38,19 @@
   .footer__links {
     gap: 5px;
   }
+}
+
+.footer__btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  transition: color 0.15s;
+}
+
+.footer__btn:hover {
+  color: #4F46E5;
 }
