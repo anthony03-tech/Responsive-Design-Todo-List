@@ -4,7 +4,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy.js"
 import "./App.css";
 
 export default function App() {
-  return <LandingPage />;
-  // return <MyAccount />;
+  // return <LandingPage />;
+  return <MyAccount />;
   // return <PrivacyPolicy />;
 }
