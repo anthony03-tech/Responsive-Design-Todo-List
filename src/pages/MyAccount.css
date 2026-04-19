@@ -1,0 +1,118 @@
+.myaccount {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 430px;
+  margin: 0 auto;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+}
+
+.myaccount__header {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.myaccount__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.3px;
+}
+
+.myaccount__body {
+  flex: 1;
+  padding: 32px 20px 100px;
+}
+
+.myaccount__title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.4px;
+  margin-bottom: 28px;
+}
+
+.myaccount__field {
+  margin-bottom: 20px;
+}
+
+.myaccount__label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.myaccount__input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f5f5f7;
+  border-radius: 12px;
+  padding: 13px 16px;
+  border: 1.5px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.myaccount__input-wrap:focus-within {
+  border-color: #4F46E5;
+  background: #fff;
+}
+
+.myaccount__icon {
+  flex-shrink: 0;
+}
+
+.myaccount__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: #1a1a2e;
+  outline: none;
+  font-family: inherit;
+}
+
+.myaccount__save {
+  margin-top: 8px;
+  background: #e8e8f0;
+  color: #999;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  font-family: inherit;
+}
+
+.myaccount__save:hover {
+  background: #4F46E5;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.myaccount__save--saved {
+  background: #22c55e;
+  color: #fff;
+}
+
+/* ── Mobile (≤ 430px) ── */
+@media (max-width: 430px) {
+  .myaccount {
+    max-width: 100%;
+    box-shadow: none;
+  }
+}

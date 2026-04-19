@@ -1,0 +1,87 @@
+/* ── Default: all screens ── */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar__logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.3px;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar__cta {
+  background: #4F46E5;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.navbar__cta:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.navbar__arrow {
+  font-size: 15px;
+}
+
+/* ── Phones (≤ 430px) ── */
+@media (max-width: 440px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .navbar__logo-text {
+    font-size: 16px;
+  }
+
+  .navbar__right {
+    gap: 8px;
+  }
+
+  .navbar__cta {
+    padding: 8px 14px;
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .navbar__arrow {
+    font-size: 13px;
+  }
+}
