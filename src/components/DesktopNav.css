@@ -1,0 +1,104 @@
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    padding: 12px 8px;
+    width: 190px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    position: sticky;
+    top: 24px;
+  }
+
+  .desktop-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .desktop-nav__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .desktop-nav__item:hover {
+    background: #f5f5f7;
+    color: #1a1a2e;
+  }
+
+  .desktop-nav__item--active {
+    color: #1a1a2e;
+    font-weight: 700;
+  }
+
+  .desktop-nav__icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    color: #aaa;
+    transition: color 0.15s;
+  }
+
+  .desktop-nav__item--active .desktop-nav__icon {
+    color: #555;
+  }
+
+  .desktop-nav__item:hover .desktop-nav__icon {
+    color: #555;
+  }
+
+  .desktop-nav__label {
+    white-space: nowrap;
+  }
+
+  .desktop-nav__divider {
+    height: 1px;
+    background: #f0f0f0;
+    margin: 8px 4px;
+  }
+
+  .desktop-nav__logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ef4444;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    transition: background 0.15s;
+  }
+
+  .desktop-nav__logout:hover {
+    background: #fff5f5;
+  }
+}

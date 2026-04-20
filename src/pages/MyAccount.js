@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BottomNav from "../components/BottomNav.js";
+import DesktopNav from "../components/DesktopNav.js";
 import "./MyAccount.css";
 
 export default function MyAccount() {
@@ -25,47 +26,62 @@ export default function MyAccount() {
         </div>
       </header>
 
-      <div className="myaccount__body">
-        <h1 className="myaccount__title">My Info</h1>
+      {/*
+        On mobile:  .myaccount__layout is column, DesktopNav is display:none, BottomNav shows.
+        On desktop: .myaccount__layout is a centered white card with row layout,
+                    DesktopNav shows as left sidebar, BottomNav is display:none.
+      */}
+      <div className="myaccount__layout">
 
-        <div className="myaccount__field">
-          <label className="myaccount__label">User Name</label>
-          <div className="myaccount__input-wrap">
-            <svg className="myaccount__icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="8" r="4" stroke="#999" strokeWidth="1.8"/>
-              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#999" strokeWidth="1.8" strokeLinecap="round"/>
-            </svg>
-            <input
-              className="myaccount__input"
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
+        <DesktopNav
+          active="account"
+          onNavigate={(key) => console.log("navigate to", key)}
+          onLogout={() => console.log("logout")}
+        />
+
+        <div className="myaccount__body">
+          <h1 className="myaccount__title">My Info</h1>
+
+          <div className="myaccount__field">
+            <label className="myaccount__label">User Name</label>
+            <div className="myaccount__input-wrap">
+              <svg className="myaccount__icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="8" r="4" stroke="#999" strokeWidth="1.8"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#999" strokeWidth="1.8" strokeLinecap="round"/>
+              </svg>
+              <input
+                className="myaccount__input"
+                type="text"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+            </div>
           </div>
+
+          <div className="myaccount__field">
+            <label className="myaccount__label">Email</label>
+            <div className="myaccount__input-wrap">
+              <svg className="myaccount__icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="14" rx="2" stroke="#999" strokeWidth="1.8"/>
+                <path d="M3 7l9 6 9-6" stroke="#999" strokeWidth="1.8" strokeLinecap="round"/>
+              </svg>
+              <input
+                className="myaccount__input"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+          </div>
+
+          <button
+            className={`myaccount__save ${saved ? "myaccount__save--saved" : ""}`}
+            onClick={handleSave}
+          >
+            {saved ? "Saved ✓" : "Save changes ✓"}
+          </button>
         </div>
 
-        <div className="myaccount__field">
-          <label className="myaccount__label">Email</label>
-          <div className="myaccount__input-wrap">
-            <svg className="myaccount__icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <rect x="3" y="5" width="18" height="14" rx="2" stroke="#999" strokeWidth="1.8"/>
-              <path d="M3 7l9 6 9-6" stroke="#999" strokeWidth="1.8" strokeLinecap="round"/>
-            </svg>
-            <input
-              className="myaccount__input"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-        </div>
-
-        <button
-          className={`myaccount__save ${saved ? "myaccount__save--saved" : ""}`}
-          onClick={handleSave}
-        >
-          {saved ? "Saved ✓" : "Save changes ✓"}
-        </button>
       </div>
 
       <BottomNav active="account" />

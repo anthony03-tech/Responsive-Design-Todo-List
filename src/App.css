@@ -32,3 +32,15 @@ main {
     box-shadow: none;
   }
 }
+
+/* ── Desktop (≥ 768px) ── */
+@media (min-width: 768px) {
+  body {
+    background: #fff;
+  }
+
+  .app {
+    max-width: 100%;
+    box-shadow: none;
+  }
+}

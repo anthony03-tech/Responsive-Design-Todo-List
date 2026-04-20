@@ -29,6 +29,13 @@
   letter-spacing: -0.3px;
 }
 
+/* Layout wrapper */
+.myaccount__layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .myaccount__body {
   flex: 1;
   padding: 32px 20px 100px;
@@ -114,5 +121,56 @@
   .myaccount {
     max-width: 100%;
     box-shadow: none;
+  }
+}
+
+/* ── Desktop (≥ 768px) ── */
+@media (min-width: 768px) {
+  .myaccount {
+    max-width: 100%;
+    box-shadow: none;
+    background: #f4f4f8;
+  }
+
+  .myaccount__header {
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .myaccount__layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  .myaccount__body {
+    flex: 1;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+
+  .myaccount__title {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+  
+  .myaccount__input-wrap {
+    max-width: 360px;
+    background: #f5f5f7;
+    border: 1.5px solid #e2e2e8;
+  }
+
+  .myaccount__input-wrap:focus-within {
+    border-color: #4F46E5;
+    background: #fff;
+  }
+
+  .myaccount__save {
+    margin-top: 12px;
   }
 }
