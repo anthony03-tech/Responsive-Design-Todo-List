@@ -9,17 +9,17 @@ export default function BottomNav({ active }) {
       </button>
 
       <button className={`bottom-nav__item ${active === "today" ? "bottom-nav__item--active" : ""}`}>
-        <img src="/task-list.png" alt="dashboard"/>
+        <img src="/task-list.png" alt="Today's list"/>
         <span>Today's list</span>
       </button>
 
       <button className={`bottom-nav__item ${active === "history" ? "bottom-nav__item--active" : ""}`}>
-        <img src="/clock.png" alt="dashboard"/>
+        <img src="/clock.png" alt="History"/>
         <span>History</span>
       </button>
 
       <button className={`bottom-nav__item ${active === "account" ? "bottom-nav__item--active" : ""}`}>
-        <img src="/user.png" alt="dashboard"/>
+        <img src="/user.png" alt="My account"/>
         <span>My account</span>
       </button>
     </nav>

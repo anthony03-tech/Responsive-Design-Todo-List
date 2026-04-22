@@ -4,22 +4,22 @@ const NAV_ITEMS = [
   {
     key: "dashboard",
     label: "Dashboard",
-    icon: (<img src="/star.png" alt="dashboard"/>),
+    icon: (<img src="/star.png" alt="Dashboard"/>),
   },
   {
     key: "tasks",
     label: "Today's tasks list",
-    icon: (<img src="/task-list.png" alt="dashboard"/>),
+    icon: (<img src="/task-list.png" alt="Today's tasks list"/>),
   },
   {
     key: "history",
     label: "Previous Tasks",
-    icon: (<img src="/clock.png" alt="dashboard"/>),
+    icon: (<img src="/clock.png" alt="Previous Tasks"/>),
   },
   {
     key: "account",
     label: "My Info",
-    icon: (<img src="/user.png" alt="dashboard"/>),
+    icon: (<img src="/user.png" alt="My Info"/>),
   },
 ];
 
@@ -43,7 +43,7 @@ export default function DesktopNav({ active = "dashboard", onNavigate, onLogout 
       <div className="desktop-nav__divider" />
 
       <button className="desktop-nav__logout" onClick={onLogout}>
-        <img src="/log-out.png" alt="dashboard"/>
+        <img src="/log-out.png" alt="log out"/>
         <span>Log out</span>
       </button>
     </nav>
