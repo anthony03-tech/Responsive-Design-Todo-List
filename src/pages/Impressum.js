@@ -2,10 +2,12 @@ import { useState } from "react";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 import SignUpModal from "../components/SignUpModal.js";
+import AccessibilityPanel from "../components/AccessibilityPanel.js";
 import "./Impressum.css";
 
 export default function Impressum({ onNavigate }) {
   const [showModal, setShowModal] = useState(false);
+  const [showA11y, setShowA11y] = useState(false);
 
   return (
     <div className="impressum">
@@ -82,6 +84,13 @@ export default function Impressum({ onNavigate }) {
           <p className="impressum__text">We may update this policy from time to time. Changes will be shown on this page.</p>
         </section>
       </main>
+
+      <button className="accessibility-btn" aria-label="Accessibility options" onClick={() => setShowA11y(true)}>
+        <img src="/icon-accessibility.png" alt="" />
+      </button>
+
+      {showA11y && <AccessibilityPanel onClose={() => setShowA11y(false)} />}
+
       <Footer onNavigate={onNavigate} />
     </div>
   );

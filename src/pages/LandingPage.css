@@ -8,6 +8,33 @@
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
 }
 
+.accessibility-btn {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4e61f6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .accessibility-btn img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .accessibility-btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+  }
+
 /* ── Mobile (≤ 430px) ── */
 @media (max-width: 430px) {
   .landing {

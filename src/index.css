@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ── CONTRAST ── */
+html.contrast {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* ── LARGE TEXT ── */
+/* html.largeText {
+  transform: scale(1.2);
+  transform-origin: center;
+} */
+
+/* ── MARK LINKS ── */
+html.markLinks a, html.markLinks button {
+  text-decoration: underline !important;
+  font-weight: bold !important;
+  outline: 2px solid red !important;
+  background-color: yellow !important;
+  color: black !important;
+}

@@ -1,12 +1,15 @@
 import { useState } from "react";
 import BottomNav from "../components/BottomNav.js";
 import DesktopNav from "../components/DesktopNav.js";
+import AccessibilityPanel from "../components/AccessibilityPanel.js";
+import Footer from "../components/Footer.js";
 import "./MyAccount.css";
 
 export default function MyAccount() {
   const [username, setUsername] = useState("Jhon Doe");
   const [email, setEmail] = useState("Jhon.doe@sitename.com");
   const [saved, setSaved] = useState(false);
+  const [showA11y, setShowA11y] = useState(false);
 
   function handleSave() {
     setSaved(true);
@@ -26,11 +29,6 @@ export default function MyAccount() {
         </div>
       </header>
 
-      {/*
-        On mobile:  .myaccount__layout is column, DesktopNav is display:none, BottomNav shows.
-        On desktop: .myaccount__layout is a centered white card with row layout,
-                    DesktopNav shows as left sidebar, BottomNav is display:none.
-      */}
       <div className="myaccount__layout">
 
         <DesktopNav
@@ -84,8 +82,14 @@ export default function MyAccount() {
 
       </div>
 
-      <BottomNav active="account" />
+      <button className="accessibility-btn" aria-label="Accessibility options" onClick={() => setShowA11y(true)}>
+        <img src="/icon-accessibility.png" alt="" />
+      </button>
 
+      {showA11y && <AccessibilityPanel onClose={() => setShowA11y(false)} />}
+
+      <BottomNav active="account" />
+      <Footer/>
     </div>
   );
 }
