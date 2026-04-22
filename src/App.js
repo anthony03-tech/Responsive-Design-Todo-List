@@ -11,8 +11,8 @@ export default function App() {
   if (page === "privacy") return <PrivacyPolicy onNavigate={setPage} />;
   if (page === "impressum") return <Impressum onNavigate={setPage} />;
 
-  //  return <LandingPage onNavigate={setPage} />;
-  return <MyAccount />;
+   return <LandingPage onNavigate={setPage} />;
+  // return <MyAccount />;
   // return <PrivacyPolicy />;
   // return <Impressum />;
 }
