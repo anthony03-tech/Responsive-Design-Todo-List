@@ -5,17 +5,17 @@ const options = [
   {
     id: "contrast",
     label: "Contrast",
-    // icon: (<img src="/icons-kontrast.png" alt="Contrast"/>),
+    icon: (<img src="/icons-kontrast.png" alt="Contrast" style={{ width: '30px', height: '30px' }}/>),
   },
   {
     id: "largeText",
     label: "Text Size",
-    // icon: (<img src="/text-size.png" alt="text-size"/>),
+    icon: (<img src="/text-size.png" alt="text-size" style={{ width: '30px', height: '30px' }}/>),
   },
   {
     id: "markLinks",
     label: "Mark Links",
-    // icon: (<img src="/highlight-links.png" alt="highlight-links"/>),
+    icon: (<img src="/highlight-links.png" alt="highlight-links" style={{ width: '30px', height: '30px' }}/>),
   },
 ];
 
