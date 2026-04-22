@@ -36,7 +36,7 @@
 }
 
 .navbar__cta {
-  background: #4F46E5;
+  background: #4e61f6;
   color: #fff;
   border: none;
   border-radius: 12px;
@@ -67,7 +67,7 @@
   }
 
   .navbar__logo-text {
-    font-size: 16px;
+    font-size: 32px;
   }
 
   .navbar__right {
@@ -88,7 +88,7 @@
   }
 
   .navbar__logo-text {
-    font-size: 20px;
+    font-size: 32px;
   }
 
   .navbar__right {

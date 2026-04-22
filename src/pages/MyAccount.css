@@ -73,7 +73,7 @@
 }
 
 .myaccount__input-wrap:focus-within {
-  border-color: #4F46E5;
+  border-color: #4e61f6;
   background: #fff;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .myaccount__save:hover {
-  background: #4F46E5;
+  background: #4e61f6;
   color: #fff;
   transform: translateY(-1px);
 }
@@ -166,7 +166,7 @@
   }
 
   .myaccount__input-wrap:focus-within {
-    border-color: #4F46E5;
+    border-color: #4e61f6;
     background: #fff;
   }
 
