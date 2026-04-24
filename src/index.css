@@ -18,13 +18,12 @@ html.contrast {
 }
 
 /* ── LARGE TEXT ── */
-/* html.largeText {
-  transform: scale(1.2);
-  transform-origin: center;
-} */
+html.largeText {
+  font-size: 1.5em;
+}
 
 /* ── MARK LINKS ── */
-html.markLinks a, html.markLinks button {
+html.markLinks a, html.markLinks button, html.markLinks input {
   text-decoration: underline !important;
   font-weight: bold !important;
   outline: 2px solid red !important;

@@ -3,17 +3,51 @@
   display: flex;
   flex-direction: column;
   background: #fff;
-  max-width: 430px;
+  max-width: 26.875rem;
   margin: 0 auto;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.08);
 }
 
 .accessibility-btn {
+  position: fixed;
+  bottom: 4.375rem;
+  right: 1.25rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #4e61f6;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.accessibility-btn img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.accessibility-btn:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+/* ── Mobile (≤ 26.875rem) ── */
+@media (max-width: 430px) {
+  .landing {
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .accessibility-btn {
     position: fixed;
-    bottom: 70px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
+    bottom: 5.313rem;
+    right: 1.25rem;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: 50%;
     border: none;
     background-color: #4e61f6;
@@ -21,25 +55,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
     z-index: 1000;
   }
 
   .accessibility-btn img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .accessibility-btn:hover {
-    transform: scale(1.05);
-    transition: 0.2s ease;
-  }
-
-/* ── Mobile (≤ 430px) ── */
-@media (max-width: 430px) {
-  .landing {
-    max-width: 100%;
-    box-shadow: none;
+    width: 3.75rem;
+    height: 3.75rem;
   }
 }
 
@@ -50,9 +72,31 @@
     box-shadow: none;
     background: #f7f7fb;
   }
+
+  .accessibility-btn {
+    position: fixed;
+    bottom: 8.063rem;
+    right: 1.25rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #4e61f6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .accessibility-btn img {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
-/* ── Desktop (≥ 1025px) ── */
+/* ── Desktop (≥ 64.0625rem) ── */
 @media (min-width: 1025px) {
   .landing {
     max-width: 100%;

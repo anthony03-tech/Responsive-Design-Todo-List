@@ -1,7 +1,7 @@
 .hero {
-  padding: 40px 20px 0;
+  padding: 2.5rem 1.25rem 0;
   display: flex;
-  min-height: calc(75vh - 54px);
+  min-height: calc(75vh - 3.375rem);
   flex-direction: column;
 }
 
@@ -10,19 +10,19 @@
 }
 
 .hero__headline {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 800;
   color: #1a1a2e;
   line-height: 1.25;
-  letter-spacing: -0.5px;
-  margin: 0 0 16px;
+  letter-spacing: -0.0312rem;
+  margin: 0 0 1rem;
 }
 
 .hero__sub {
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #555;
   line-height: 1.65;
-  margin: 0 0 32px;
+  margin: 0 0 2rem;
 }
 
 .hero__cta {
@@ -30,24 +30,24 @@
   background: #4e61f6;
   color: #fff;
   border: none;
-  border-radius: 12px;
-  padding: 16px 28px;
-  font-size: 16px;
+  border-radius: 0.75rem;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.35);
+  box-shadow: 0 0.25rem 1.25rem rgba(79, 70, 229, 0.35);
 }
 
 .hero__cta:hover {
   background: #4338ca;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(79, 70, 229, 0.45);
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.5rem 1.75rem rgba(79, 70, 229, 0.45);
 }
 
 .hero__mockup {
@@ -57,27 +57,27 @@
 /* ── Phones ── */
 @media (374px <= width <= 430px) {
   .hero {
-    padding: 28px 16px 0;
-    min-height: calc(75vh - 54px);
+    padding: 1.75rem 1rem 0;
+    min-height: calc(75vh - 3.375rem);
   }
 
   .hero__headline {
-    font-size: 24px;
-    margin: 0 0 14px;
+    font-size: 1.5rem;
+    margin: 0 0 0.875rem;
   }
 
   .hero__sub {
-    font-size: 14px;
-    margin: 0 0 28px;
+    font-size: 0.875rem;
+    margin: 0 0 1.75rem;
   }
 
   .hero__cta {
-    padding: 14px 24px;
-    font-size: 15px;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9375rem;
   }
 
   .hero__mockup {
-    margin-top: 32px;
+    margin-top: 2rem;
   }
 }
 
@@ -86,9 +86,9 @@
   .hero {
     flex-direction: row;
     align-items: center;
-    padding: 48px 40px;
-    min-height: calc(75vh - 54px);
-    gap: 48px;
+    padding: 3rem 2.5rem;
+    min-height: calc(75vh - 3.375rem);
+    gap: 3rem;
   }
 
   .hero__content {
@@ -96,22 +96,22 @@
   }
 
   .hero__headline {
-    font-size: 32px;
-    margin: 0 0 16px;
-    letter-spacing: -0.7px;
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    letter-spacing: -0.0437rem;
     line-height: 1.2;
   }
 
   .hero__sub {
-    font-size: 15px;
-    margin: 0 0 32px;
+    font-size: 0.9375rem;
+    margin: 0 0 2rem;
   }
 
   .hero__cta {
     width: auto;
     display: inline-flex;
-    padding: 14px 28px;
-    font-size: 15px;
+    padding: 0.875rem 1.75rem;
+    font-size: 0.9375rem;
   }
 
   .hero__mockup {
@@ -126,48 +126,48 @@
   }
 }
 
-/* ── Desktop (≥ 768px) ── */
+/* ── Desktop (≥ 48rem) ── */
 @media (min-width: 1025px) {
   .hero {
     flex-direction: row;
     align-items: center;
-    max-width: 1100px;
+    max-width: 68.75rem;
     margin: 0 auto;
     width: 100%;
-    padding: 80px 60px;
-    min-height: calc(75vh - 54px);
-    gap: 80px;
+    padding: 5rem 3.75rem;
+    min-height: calc(75vh - 3.375rem);
+    gap: 5rem;
   }
 
   .hero__content {
     flex: 1;
-    max-width: 440px;
+    max-width: 27.5rem;
   }
 
   .hero__headline {
-    font-size: 40px;
-    margin: 0 0 20px;
-    letter-spacing: -1px;
+    font-size: 2.5rem;
+    margin: 0 0 1.25rem;
+    letter-spacing: -0.0625rem;
     line-height: 1.15;
   }
 
   .hero__sub {
-    font-size: 16px;
-    margin: 0 0 36px;
+    font-size: 1rem;
+    margin: 0 0 2.25rem;
     color: #666;
   }
 
   .hero__cta {
     width: auto;
     display: inline-flex;
-    padding: 16px 36px;
-    font-size: 15px;
+    padding: 1rem 2.25rem;
+    font-size: 0.9375rem;
   }
 
   .hero__mockup {
     flex: 1;
     margin-top: 0;
-    max-width: 460px;
+    max-width: 28.75rem;
   }
 
   .hero__mockup img {

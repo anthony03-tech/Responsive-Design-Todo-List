@@ -3,15 +3,15 @@
   display: flex;
   flex-direction: column;
   background: #fff;
-  max-width: 430px;
+  max-width: 26.875rem;
   margin: 0 auto;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.08);
 }
 
 .myaccount__header {
   display: flex;
   align-items: center;
-  padding: 14px 20px;
+  padding: 0.875rem 1.25rem;
   background: #fff;
   border-bottom: 1px solid #f0f0f0;
   position: sticky;
@@ -22,11 +22,11 @@
 .myaccount__logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 18px;
+  gap: 0.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #1a1a2e;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.0187rem;
 }
 
 /* Layout wrapper */
@@ -38,37 +38,37 @@
 
 .myaccount__body {
   flex: 1;
-  padding: 32px 20px 100px;
+  padding: 2rem 1.25rem 6.25rem;
 }
 
 .myaccount__title {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 800;
   color: #1a1a2e;
-  letter-spacing: -0.4px;
-  margin-bottom: 28px;
+  letter-spacing: -0.025rem;
+  margin-bottom: 1.75rem;
 }
 
 .myaccount__field {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .myaccount__label {
   display: block;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: #1a1a2e;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .myaccount__input-wrap {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   background: #f5f5f7;
-  border-radius: 12px;
-  padding: 13px 16px;
-  border: 1.5px solid transparent;
+  border-radius: 0.75rem;
+  padding: 0.8125rem 1rem;
+  border: 0.0938rem solid transparent;
   transition: border-color 0.2s;
 }
 
@@ -85,20 +85,20 @@
   flex: 1;
   border: none;
   background: transparent;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #1a1a2e;
   outline: none;
   font-family: inherit;
 }
 
 .myaccount__save {
-  margin-top: 8px;
+  margin-top: 0.5rem;
   background: #e8e8f0;
   color: #999;
   border: none;
-  border-radius: 12px;
-  padding: 13px 24px;
-  font-size: 14px;
+  border-radius: 0.75rem;
+  padding: 0.8125rem 1.5rem;
+  font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s, color 0.2s, transform 0.15s;
@@ -108,7 +108,7 @@
 .myaccount__save:hover {
   background: #4e61f6;
   color: #fff;
-  transform: translateY(-1px);
+  transform: translateY(-0.0625rem);
 }
 
 .myaccount__save--saved {
@@ -116,7 +116,7 @@
   color: #fff;
 }
 
-/* ── Mobile (≤ 430px) ── */
+/* ── Mobile (≤ 26.875rem) ── */
 @media (max-width: 430px) {
   .myaccount {
     max-width: 100%;
@@ -129,42 +129,51 @@
   .myaccount {
     max-width: 100%;
     box-shadow: none;
-    background: #f4f4f8;
+    background: #fff;
   }
 
   .myaccount__header {
     background: #fff;
-    padding: 14px 40px;
+    padding: 1.25rem 3rem;
     border-bottom: 1px solid #f0f0f0;
   }
 
   .myaccount__layout {
     flex-direction: column;
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 0 40px;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .myaccount__body {
     flex: 1;
-    border-radius: 16px;
-    padding: 36px 40px 48px;
+    padding: 3rem 3.5rem 4rem;
   }
 
   .myaccount__title {
-    font-size: 22px;
-    margin-bottom: 28px;
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .myaccount__label {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
   }
 
   .myaccount__field {
-    margin-bottom: 24px;
+    margin-bottom: 2rem;
   }
 
   .myaccount__input-wrap {
     max-width: 100%;
+    padding: 1.125rem 1.5rem;
+    border-radius: 0.875rem;
     background: #f5f5f7;
-    border: 1.5px solid #e2e2e8;
+    border: 1px solid transparent;
+  }
+
+  .myaccount__input {
+    font-size: 1.125rem;
   }
 
   .myaccount__input-wrap:focus-within {
@@ -173,12 +182,14 @@
   }
 
   .myaccount__save {
-    margin-top: 16px;
-    padding: 13px 32px;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    border-radius: 0.875rem;
   }
 }
 
-/* ── Desktop (≥ 1025px) ── */
+/* ── Desktop (≥ 64.0625rem) ── */
 @media (min-width: 1025px) {
   .myaccount {
     max-width: 100%;
@@ -188,35 +199,35 @@
 
   .myaccount__header {
     background: #fff;
-    padding: 14px 40px;
+    padding: 0.875rem 2.5rem;
     border-bottom: 1px solid #f0f0f0;
   }
 
   .myaccount__layout {
     flex-direction: row;
     align-items: flex-start;
-    gap: 24px;
-    max-width: 900px;
-    margin: 32px auto;
-    padding: 0 40px;
+    gap: 1.5rem;
+    max-width: 56.25rem;
+    margin: 2rem auto;
+    padding: 0 2.5rem;
     width: 100%;
   }
 
   .myaccount__body {
     flex: 1;
     padding: 0;
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
   }
 
   .myaccount__title {
-    font-size: 22px;
-    margin-bottom: 28px;
+    font-size: 1.375rem;
+    margin-bottom: 1.75rem;
   }
   
   .myaccount__input-wrap {
-    max-width: 360px;
+    max-width: 22.5rem;
     background: #f5f5f7;
-    border: 1.5px solid #e2e2e8;
+    border: 0.0938rem solid #e2e2e8;
   }
 
   .myaccount__input-wrap:focus-within {
@@ -225,6 +236,6 @@
   }
 
   .myaccount__save {
-    margin-top: 12px;
+    margin-top: 0.75rem;
   }
 }
