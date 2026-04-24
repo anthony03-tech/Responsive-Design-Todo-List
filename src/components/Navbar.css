@@ -80,6 +80,25 @@
     gap: 5px;
   }
 }
+/* ── Tablet ── */
+@media (768px <= width <= 1024px) {
+  .navbar {
+    padding: 14px 40px;
+  }
+
+  .navbar__logo-text {
+    font-size: 28px;
+  }
+
+  .navbar__right {
+    gap: 14px;
+  }
+
+  .navbar__cta {
+    padding: 10px 22px;
+    font-size: 13px;
+  }
+}
 
 /* ── Desktop (≥ 768px) ── */
 @media (min-width: 768px) {

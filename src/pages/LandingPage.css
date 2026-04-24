@@ -43,10 +43,20 @@
   }
 }
 
-/* ── Desktop (≥ 768px) ── */
-@media (min-width: 768px) {
+/* ── Tablet ── */
+@media (768px <= width <= 1024px) {
   .landing {
     max-width: 100%;
     box-shadow: none;
+    background: #f7f7fb;
+  }
+}
+
+/* ── Desktop (≥ 1025px) ── */
+@media (min-width: 1025px) {
+  .landing {
+    max-width: 100%;
+    box-shadow: none;
+    background: #f7f7fb;
   }
 }

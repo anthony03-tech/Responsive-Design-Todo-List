@@ -41,14 +41,21 @@
 }
 
 /* ── Mobile (≤ 430px) ── */
-@media (max-width: 430px) {
+@media (357px <= width <= 430px) {
+  .bottom-nav {
+    max-width: 100%;
+  }
+}
+
+/* ── Tablet (≤ 430px) ── */
+@media (768px <= width <= 1024px) {
   .bottom-nav {
     max-width: 100%;
   }
 }
 
 /* ── Desktop (≥ 768px) ── */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .bottom-nav {
     display: none;
   }

@@ -81,6 +81,49 @@
   }
 }
 
+/* ── Tablet ── */
+@media (768px <= width <= 1024px) {
+  .impressum {
+    max-width: 100%;
+    box-shadow: none;
+  }
+  
+  .impressum__body {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 0 80px;
+  }
+
+  .impressum__back {
+    margin-bottom: 28px;
+  }
+
+  .impressum__title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    margin-bottom: 36px;
+  }
+
+  .impressum__heading {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .impressum__text {
+    font-size: 14px;
+  }
+
+  .impressum__list li {
+    font-size: 14px;
+  }
+
+  .impressum__section {
+    margin-bottom: 28px;
+  }
+}
+
 /* ── Desktop (≥ 768px) ── */
 @media (min-width: 768px) {
   .impressum {

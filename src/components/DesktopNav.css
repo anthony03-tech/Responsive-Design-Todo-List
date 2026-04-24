@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .desktop-nav {
     display: flex;
     flex-direction: column;

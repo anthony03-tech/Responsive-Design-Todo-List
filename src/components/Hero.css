@@ -54,8 +54,8 @@
   overflow: hidden;
 }
 
-/* ── Phones (≤ 440px) ── */
-@media (max-width: 440px) {
+/* ── Phones ── */
+@media (374px <= width <= 430px) {
   .hero {
     padding: 28px 16px 0;
     min-height: calc(75vh - 54px);
@@ -81,8 +81,53 @@
   }
 }
 
+/* ── Tablet ── */
+@media (768px <= width <= 1024px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    padding: 48px 40px;
+    min-height: calc(75vh - 54px);
+    gap: 48px;
+  }
+
+  .hero__content {
+    flex: 1;
+  }
+
+  .hero__headline {
+    font-size: 32px;
+    margin: 0 0 16px;
+    letter-spacing: -0.7px;
+    line-height: 1.2;
+  }
+
+  .hero__sub {
+    font-size: 15px;
+    margin: 0 0 32px;
+  }
+
+  .hero__cta {
+    width: auto;
+    display: inline-flex;
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+
+  .hero__mockup {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  .hero__mockup img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 /* ── Desktop (≥ 768px) ── */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .hero {
     flex-direction: row;
     align-items: center;

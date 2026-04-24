@@ -81,6 +81,49 @@
   }
 }
 
+/* ── Tablet ── */
+@media (768px <= width <= 1024px) {
+  .privacy {
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .privacy__body {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 0 80px;
+  }
+
+  .privacy__back {
+    margin-bottom: 28px;
+  }
+
+  .privacy__title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    margin-bottom: 36px;
+  }
+
+  .privacy__heading {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .privacy__text {
+    font-size: 14px;
+  }
+
+  .privacy__list li {
+    font-size: 14px;
+  }
+
+  .privacy__section {
+    margin-bottom: 28px;
+  }
+}
+
 /* ── Desktop (≥ 768px) ── */
 @media (min-width: 768px) {
   .privacy {

@@ -89,6 +89,26 @@
   }
 }
 
+/* ── Tablet ── */
+@media (768px <= width <= 1024px) {
+  .lang-dropdown__trigger {
+    font-size: 14px;
+    gap: 6px;
+    padding: 7px 8px;
+    border-radius: 8px;
+  }
+
+  .lang-dropdown__menu {
+    min-width: 140px;
+    border-radius: 12px;
+  }
+
+  .lang-dropdown__item {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
 /* ── Desktop (≥ 768px) ── */
 @media (min-width: 768px) {
   .lang-dropdown__trigger {

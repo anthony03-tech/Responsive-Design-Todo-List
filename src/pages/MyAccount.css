@@ -124,8 +124,62 @@
   }
 }
 
-/* ── Desktop (≥ 768px) ── */
-@media (min-width: 768px) {
+/* ── Tablet ── */
+@media (768px <= width <= 1024px) {
+  .myaccount {
+    max-width: 100%;
+    box-shadow: none;
+    background: #f4f4f8;
+  }
+
+  .myaccount__header {
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .myaccount__layout {
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  .myaccount__body {
+    flex: 1;
+    border-radius: 16px;
+    padding: 36px 40px 48px;
+  }
+
+  .myaccount__title {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .myaccount__field {
+    margin-bottom: 24px;
+  }
+
+  .myaccount__input-wrap {
+    max-width: 100%;
+    background: #f5f5f7;
+    border: 1.5px solid #e2e2e8;
+  }
+
+  .myaccount__input-wrap:focus-within {
+    border-color: #4e61f6;
+    background: #fff;
+  }
+
+  .myaccount__save {
+    margin-top: 16px;
+    padding: 13px 32px;
+  }
+}
+
+/* ── Desktop (≥ 1025px) ── */
+@media (min-width: 1025px) {
   .myaccount {
     max-width: 100%;
     box-shadow: none;
