@@ -48,7 +48,7 @@
 }
 
 /* ── Tablet ── */
-@media (768px <= width <= 1024px) {
+@media (768px <= width <= 1366px) {
   .bottom-nav {
     max-width: 100%;
   }
@@ -77,7 +77,7 @@
 }
 
 /* ── Desktop ── */
-@media (min-width: 1025px) {
+@media (min-width: 1367px) {
   .bottom-nav {
     display: none;
   }

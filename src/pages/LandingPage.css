@@ -2,7 +2,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #fff;
   max-width: 26.875rem;
   margin: 0 auto;
   box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.08);
@@ -44,7 +43,7 @@
 
   .accessibility-btn {
     position: fixed;
-    bottom: 5.313rem;
+    bottom: 2.313rem;
     right: 1.25rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -66,7 +65,7 @@
 }
 
 /* ── Tablet ── */
-@media (768px <= width <= 1024px) {
+@media (768px <= width <= 1366px) {
   .landing {
     max-width: 100%;
     box-shadow: none;
@@ -75,7 +74,7 @@
 
   .accessibility-btn {
     position: fixed;
-    bottom: 8.063rem;
+    bottom: 2.7rem;
     right: 1.25rem;
     width: 5rem;
     height: 5rem;
@@ -97,7 +96,7 @@
 }
 
 /* ── Desktop (≥ 64.0625rem) ── */
-@media (min-width: 1025px) {
+@media (min-width: 1367px) {
   .landing {
     max-width: 100%;
     box-shadow: none;

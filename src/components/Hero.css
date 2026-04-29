@@ -82,7 +82,7 @@
 }
 
 /* ── Tablet ── */
-@media (768px <= width <= 1024px) {
+@media (768px <= width <= 1366px) {
   .hero {
     flex-direction: row;
     align-items: center;
@@ -127,7 +127,7 @@
 }
 
 /* ── Desktop (≥ 48rem) ── */
-@media (min-width: 1025px) {
+@media (min-width: 1367px) {
   .hero {
     flex-direction: row;
     align-items: center;

@@ -116,7 +116,7 @@
   color: #fff;
 }
 
-/* ── Mobile (≤ 26.875rem) ── */
+/* ── Mobile ── */
 @media (max-width: 430px) {
   .myaccount {
     max-width: 100%;
@@ -125,7 +125,7 @@
 }
 
 /* ── Tablet ── */
-@media (768px <= width <= 1024px) {
+@media (768px <= width <= 1366px) {
   .myaccount {
     max-width: 100%;
     box-shadow: none;
@@ -189,8 +189,8 @@
   }
 }
 
-/* ── Desktop (≥ 64.0625rem) ── */
-@media (min-width: 1025px) {
+/* ── Desktop ── */
+@media (min-width: 1367px) {
   .myaccount {
     max-width: 100%;
     box-shadow: none;

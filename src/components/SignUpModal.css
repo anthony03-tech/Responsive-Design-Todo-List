@@ -95,7 +95,7 @@
 }
 
 /* ── Desktop (≥ 48rem) ── */
-@media (min-width: 768px) {
+@media (min-width: 1367px) {
   .modal {
     max-width: 26.25rem;
     padding: 2.5rem 2.25rem 2.25rem;

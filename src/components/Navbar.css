@@ -8,6 +8,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  flex-wrap: wrap;
+  gap: 0.5rem;  
 }
 
 .navbar__logo {
@@ -33,6 +35,9 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-wrap: wrap; 
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .navbar__cta {
@@ -81,7 +86,7 @@
   }
 }
 /* ── Tablet ── */
-@media (768px <= width <= 1024px) {
+@media (768px <= width <= 1366px) {
   .navbar {
     padding: 0.875rem 2.5rem;
   }
@@ -101,7 +106,7 @@
 }
 
 /* ── Desktop (≥ 48rem) ── */
-@media (min-width: 768px) {
+@media (min-width: 1367px) {
   .navbar {
     padding: 0.875rem 3.75rem;
   }
